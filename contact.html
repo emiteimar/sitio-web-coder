@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <title>Proyecto Diseño Web Emilio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!--Font Awesome-->
+    <script
+      src="https://kit.fontawesome.com/914f91a279.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--Google Fonts-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,700;0,900;1,400;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header__container">
+        <div class="header__logo">
+          <!--Header Logo-->
+          <a href="index.html">
+            <img
+              src="img/logoipsum-logo-48.svg"
+              width="200"
+              height=""
+              alt="logoipsum-logo-48"
+            />
+          </a>
+        </div>
+        <div class="header__navbar">
+          <!--Navbar-->
+          <nav>
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="link" href="index.html">Inicio</a>
+              </li>
+              <li class="nav__item">
+                <a class="link" href="products.html">Productos</a>
+              </li>
+              <li class="nav__item">
+                <a class="link" href="contact.html">Contacto</a>
+              </li>
+              <li class="nav__item">
+                <a class="link" href="news.html">Noticias</a>
+              </li>
+              <li class="nav__item">
+                <a class="link" href="about.html">Nosotros</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__sm">
+          <!--Social Media-->
+          <a class="link" target="blank" href="http://www.facebook.com">
+            <i class="sm__fa fa-brands fa-facebook"></i>
+          </a>
+          <a class="link" target="blank" href="http://www.instagram.com">
+            <i class="sm__fa fa-brands fa-instagram"></i>
+          </a>
+          <a class="link" target="blank" href="http://www.whatsapp.com">
+            <i class="sm__fa fa-brands fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div>
+        <!--Page Subtitle-->
+        <h1 class="page__subtitle">Contáctenos</h1>
+      </div>
+      <!--Contact form text explanation-->
+      <div class="main__container">
+        <div class="grid__container__contact">
+          <div class="grid__area__contact__text">
+            <h2>Contáctenos ahora</h2>
+            <h1>Deje un mensaje</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+              ipsa, accusamus ab minus magnam quod, reiciendis dolore ex
+              architecto consequuntur iure asperiores voluptatibus, sint
+              ducimus. Pariatur placeat in consequuntur quae?
+            </p>
+            <div class="header__sm">
+              <!--Social Media-->
+              <a class="link" target="blank" href="http://www.facebook.com">
+                <i class="sm__fa fa-brands fa-facebook"></i>
+              </a>
+              <a class="link" target="blank" href="http://www.instagram.com">
+                <i class="sm__fa fa-brands fa-instagram"></i>
+              </a>
+              <a class="link" target="blank" href="http://www.whatsapp.com">
+                <i class="sm__fa fa-brands fa-whatsapp"></i>
+              </a>
+            </div>
+          </div>
+
+          <!--Contact form-->
+          <div>
+            <form action="" class="grid__area__contact__form">
+              <fieldset>
+                <!--<legend>Contacto</legend>-->
+                <div>
+                  <!--<label for="nombre">Nombre</label>-->
+                  <input
+                    type="text"
+                    name="nombre"
+                    id="nombre"
+                    placeholder="Nombre"
+                    required
+                  />
+                  <!--<label for="lastname">Apellido</label>-->
+                  <input
+                    type="text"
+                    name="apellido"
+                    id="lastname"
+                    placeholder="Apellido"
+                  />
+                </div>
+                <div>
+                  <!--<label for="telefono">Teléfono</label>-->
+                  <input
+                    type="text"
+                    name="telefono"
+                    id="telefono"
+                    placeholder="Teléfono"
+                  />
+                  <!--<label for="email">e-mail</label>-->
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="e-mail"
+                    required
+                  />
+                </div>
+                <div>
+                  Ya soy cliente
+                  <input type="checkbox" name="cliente" value="si" />
+                </div>
+                <div>
+                  <!--<label for="mensaje">Mensaje</label
+                >-->
+                  <textarea
+                    name="mensaje"
+                    id="mensaje"
+                    cols="30"
+                    rows="10"
+                    placeholder="Escriba aquí su mensaje"
+                    required
+                  ></textarea>
+                </div>
+                <div>
+                  <input type="submit" value="Enviar" />
+                  <input type="reset" value="Borrar" />
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>Copyright (Name & Last)</footer>
+  </body>
+</html>
