@@ -325,7 +325,7 @@ footer {
   position: fixed;
   z-index: 2;
   margin-left: 90vw;
-  margin-top: 80vh;
+  margin-top: 90vh;
 }
 
 .col {
@@ -479,8 +479,8 @@ footer {
     display: flex;
     position: fixed;
     z-index: 2;
-    margin-left: 90vw;
-    margin-top: 90vh;
+    margin-left: 80vw;
+    margin-top: 80vh;
   }
 }
 input[type="text"] {
