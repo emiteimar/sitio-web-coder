@@ -320,6 +320,14 @@ footer {
 
 /*GRIDS Code End*/
 
+.wpicon {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  margin-left: 90vw;
+  margin-top: 90vh;
+}
+
 .col {
   width: 100%;
 }
@@ -466,6 +474,13 @@ footer {
   }
   header {
     position: relative;
+  }
+  .wpicon {
+    display: flex;
+    position: fixed;
+    z-index: 2;
+    margin-left: 90vw;
+    margin-top: 90vh;
   }
 }
 input[type="text"] {
