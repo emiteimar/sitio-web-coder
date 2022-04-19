@@ -91,6 +91,10 @@ footer {
   max-width: 1300px;
 }
 
+.nav-toggle {
+  visibility: hidden;
+}
+
 /*GRIDS Code Start*/
 
 /*GRIDS INDEX*/
@@ -115,6 +119,12 @@ footer {
   max-width: 250px;
   padding: 2rem;
   box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.4);
+  transition: all 0.5s;
+}
+
+.grid__area__banner:hover {
+  transform: scale(105%);
+  transition-duration: 0.3s;
 }
 .grid__area__article1 {
   grid-area: article1;
@@ -125,7 +135,13 @@ footer {
   border: solid 1px #2f2428;
   padding: 2rem;
   box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.4);
+  transition: all 0.5s;
 }
+.grid__area__article1:hover {
+  transform: scale(105%);
+  transition-duration: 0.3s;
+}
+
 .grid__area__article2 {
   grid-area: article2;
   display: grid;
@@ -138,6 +154,11 @@ footer {
 
   padding: 2rem;
   box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.4);
+  transition: all 0.5s;
+}
+.grid__area__article2:hover {
+  transform: scale(105%);
+  transition-duration: 0.3s;
 }
 
 /*GIRD PRODUCTS PAGE*/
@@ -162,6 +183,12 @@ footer {
   border: solid 1px #2f2428;
   padding: 2rem;
   box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.4);
+  transition: all 0.5s;
+}
+
+.grid__area__prod1img:hover {
+  transform: scale(105%);
+  transition-duration: 0.3s;
 }
 
 .grid__area__prod1desc {
@@ -184,6 +211,12 @@ footer {
   border: solid 1px #2f2428;
   padding: 2rem;
   box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.4);
+  transition: all 0.5s;
+}
+
+.grid__area__prod2img:hover {
+  transform: scale(105%);
+  transition-duration: 0.3s;
 }
 
 .grid__area__prod2desc {
@@ -206,6 +239,12 @@ footer {
   border: solid 1px #2f2428;
   padding: 2rem;
   box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.4);
+  transition: all 0.5s;
+}
+
+.grid__area__prod3img:hover {
+  transform: scale(105%);
+  transition-duration: 0.3s;
 }
 
 .grid__area__prod3desc {
@@ -392,6 +431,7 @@ div.animatedsm {
 
 .card__img__container {
   max-width: 650px;
+  justify-items: center;
 }
 .card__img {
   max-width: 100%;
@@ -462,6 +502,30 @@ div.animatedsm {
   input[type="email"] {
     width: 100%;
   }
+  div.animatedlogo {
+    animation: logo 1.5s ease;
+  }
+  @keyframes logo {
+    0% {
+      opacity: 0;
+      transform: translateY(-100px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+
+  @keyframes sm {
+    0% {
+      opacity: 0;
+      transform: translateX(0px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
 }
 
 @media (max-width: 830px) {
@@ -501,6 +565,79 @@ div.animatedsm {
     flex-direction: column;
     align-content: space-between;
   }
+
+  /* Hamburger code Start */
+
+  .nav {
+    width: 100%;
+    visibility: hidden;
+    height: 0;
+
+    font-size: 1rem;
+  }
+
+  .nav-toggle {
+    visibility: visible;
+    cursor: pointer;
+    border: 2px solid #2f2428;
+    width: 3rem;
+    height: 3rem;
+    padding: 0em;
+    margin-left: 1rem;
+    border-radius: 0.25rem;
+    background-color: transparent;
+    color: #2f2428;
+    transition: opacity 250ms ease;
+    position: absolute;
+    left: 0;
+  }
+
+  .nav-toggle:focus,
+  .nav-toggle:hover {
+    opacity: 0.75;
+  }
+
+  .hamburger {
+    width: 50%;
+    position: relative;
+  }
+
+  .hamburger,
+  .hamburger::before,
+  .hamburger::after {
+    display: block;
+    margin: 0 auto;
+    height: 3px;
+    background: #2f2428;
+  }
+
+  .hamburger::before,
+  .hamburger::after {
+    content: "";
+    width: 100%;
+  }
+
+  .hamburger::before {
+    transform: translateY(-6px);
+  }
+
+  .hamburger::after {
+    transform: translateY(3px);
+  }
+
+  .nav--visible {
+    visibility: visible;
+    height: auto;
+    position: relative;
+  }
+
+  .header__sm--visible {
+    visibility: visible;
+    height: auto;
+    position: relative;
+  }
+
+  /* Hamburger code END */
 
   .nav__list {
     flex-direction: column;
@@ -557,6 +694,16 @@ input[type="reset"] {
   color: azure;
   width: 100%;
   box-sizing: border-box;
+  transition: all 0.5s;
+}
+input[type="submit"]:hover {
+  transform: scale(105%);
+  transition-duration: 0.3s;
+}
+
+input[type="reset"]:hover {
+  transform: scale(105%);
+  transition-duration: 0.3s;
 }
 
 fieldset {
