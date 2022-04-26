@@ -1,0 +1,259 @@
+/*GRIDS Code Start*/
+
+/*GRIDS INDEX*/
+.grid__container {
+  display: grid;
+  grid-gap: 1rem;
+  margin: 1rem;
+  max-width: 1300px;
+  justify-items: center;
+  grid-template-areas:
+    "banner article1"
+    "banner article2";
+}
+
+.grid__area__banner {
+  grid-area: banner;
+  display: grid;
+  justify-items: center;
+  align-content: start;
+  background-image: linear-gradient(beige, white, #decdaa);
+  border: $line-border;
+  max-width: 250px;
+  padding: 2rem;
+  box-shadow: $box-shadow-card;
+  transition: all 0.5s;
+  &:hover {
+    transform: scale(105%);
+    transition-duration: 0.3s;
+  }
+}
+
+.grid__area__article1 {
+  grid-area: article1;
+  display: grid;
+  justify-items: center;
+  max-width: 1200px;
+  background-image: linear-gradient(beige, white, #decdaa);
+  border: $line-border;
+  padding: 2rem;
+  box-shadow: $box-shadow-card;
+  transition: all 0.5s;
+  &:hover {
+    transform: scale(105%);
+    transition-duration: 0.3s;
+  }
+}
+
+.grid__area__article2 {
+  grid-area: article2;
+  display: grid;
+  justify-items: center;
+  max-width: 1200px;
+  background-image: linear-gradient(beige, white, #decdaa);
+  border: $line-border;
+  padding: 2rem;
+  box-shadow: $box-shadow-card;
+  padding: 2rem;
+  box-shadow: $box-shadow-card;
+  transition: all 0.5s;
+  &:hover {
+    transform: scale(105%);
+    transition-duration: 0.3s;
+  }
+}
+
+/*GIRD PRODUCTS PAGE*/
+.grid__container__prod {
+  display: grid;
+  grid-gap: 1rem;
+  margin: 1rem;
+  max-width: 1300px;
+  justify-items: center;
+  justify-self: center;
+  grid-template-areas:
+    "prod1img prod1desc prod1desc"
+    "prod2desc prod2desc prod2img"
+    "prod3img prod3desc prod3desc";
+}
+.grid__area__prod1img {
+  grid-area: prod1img;
+  display: grid;
+  justify-items: center;
+  max-width: 580px;
+  background-image: linear-gradient(beige, white, #decdaa);
+  border: $line-border;
+  padding: 2rem;
+  box-shadow: $box-shadow-card;
+  transition: all 0.5s;
+  &:hover {
+    transform: scale(105%);
+    transition-duration: 0.3s;
+  }
+}
+
+.grid__area__prod1desc {
+  grid-area: prod1desc;
+  display: grid;
+  justify-items: center;
+  max-width: 580px;
+  background-image: linear-gradient(beige, white, #decdaa);
+  border: $line-border;
+  padding: 2rem;
+  box-shadow: $box-shadow-card;
+}
+
+.grid__area__prod2img {
+  grid-area: prod2img;
+  display: grid;
+  justify-items: center;
+  max-width: 580px;
+  background-image: linear-gradient(beige, white, #decdaa);
+  border: $line-border;
+  padding: 2rem;
+  box-shadow: $box-shadow-card;
+  transition: all 0.5s;
+  &:hover {
+    transform: scale(105%);
+    transition-duration: 0.3s;
+  }
+}
+
+.grid__area__prod2desc {
+  grid-area: prod2desc;
+  display: grid;
+  justify-items: center;
+  max-width: 580px;
+  background-image: linear-gradient(beige, white, #decdaa);
+  border: $line-border;
+  padding: 2rem;
+  box-shadow: $box-shadow-card;
+}
+
+.grid__area__prod3img {
+  grid-area: prod3img;
+  display: grid;
+  justify-items: center;
+  max-width: 580px;
+  background-image: linear-gradient(beige, white, #decdaa);
+  border: $line-border;
+  padding: 2rem;
+  box-shadow: $box-shadow-card;
+  transition: all 0.5s;
+  &:hover {
+    transform: scale(105%);
+    transition-duration: 0.3s;
+  }
+}
+
+.grid__area__prod3desc {
+  grid-area: prod3desc;
+  display: grid;
+  justify-items: center;
+  max-width: 580px;
+  background-image: linear-gradient(beige, white, #decdaa);
+  border: $line-border;
+  padding: 2rem;
+  box-shadow: $box-shadow-card;
+}
+
+/*GRID CONTACT PAGE*/
+
+.grid__container__contact {
+  display: grid;
+  grid-gap: 1rem;
+  margin: 1rem;
+  max-width: 1300px;
+  justify-items: center;
+  grid-template-areas: "contacttext contactform";
+}
+.grid__area__contact__text {
+  grid-area: contacttext;
+  display: grid;
+  justify-items: center;
+  max-width: 500px;
+  background-image: linear-gradient(beige, white, #decdaa);
+  border: $line-border;
+  padding: 2rem;
+  box-shadow: $box-shadow-card;
+}
+.grid__area__contact__form {
+  grid-area: contactform;
+  display: grid;
+  justify-items: center;
+  max-width: 500px;
+  background-image: linear-gradient(beige, white, #decdaa);
+  border: $line-border;
+  padding: 2rem;
+  box-shadow: $box-shadow-card;
+
+  padding: 2rem;
+  box-shadow: $box-shadow-card;
+}
+
+/*GRID NEWS PAGE*/
+
+.grid__container__news {
+  display: grid;
+  grid-gap: 1rem;
+  margin: 1rem;
+  max-width: 1300px;
+  justify-items: center;
+  grid-template-areas:
+    "news1"
+    "news2"
+    "news3"
+    "news4";
+}
+.grid__area__news1 {
+  grid-area: news1;
+  display: grid;
+  justify-items: center;
+  max-width: 1200px;
+  background-image: linear-gradient(beige, white, #decdaa);
+  border: $line-border;
+  padding: 2rem;
+  box-shadow: $box-shadow-card;
+}
+
+.grid__area__news2 {
+  grid-area: news2;
+  display: grid;
+  justify-items: center;
+  max-width: 1200px;
+  background-image: linear-gradient(beige, white, #decdaa);
+  border: $line-border;
+  padding: 2rem;
+  box-shadow: $box-shadow-card;
+}
+
+.grid__area__news3 {
+  grid-area: news3;
+  display: grid;
+  justify-items: center;
+  max-width: 1200px;
+  background-image: linear-gradient(beige, white, #decdaa);
+  border: $line-border;
+  padding: 2rem;
+  box-shadow: $box-shadow-card;
+}
+
+.grid__area__news4 {
+  grid-area: news4;
+  display: grid;
+  justify-items: center;
+  max-width: 1200px;
+  background-image: linear-gradient(beige, white, #decdaa);
+  border: $line-border;
+  padding: 2rem;
+  box-shadow: $box-shadow-card;
+}
+
+.news__images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+/*GRIDS Code End*/
