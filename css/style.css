@@ -494,31 +494,6 @@ div.animatedsm {
   input[type=email] {
     width: 100%;
   }
-
-  div.animatedlogo {
-    animation: logo 1.5s ease;
-  }
-
-  @keyframes logo {
-    0% {
-      opacity: 0;
-      transform: translateY(-100px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0px);
-    }
-  }
-  @keyframes sm {
-    0% {
-      opacity: 0;
-      transform: translateX(0px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0px);
-    }
-  }
 }
 @media (max-width: 830px) {
   .grid__container {
@@ -637,6 +612,31 @@ div.animatedsm {
     z-index: 2;
     margin-left: 80vw;
     margin-top: 80vh;
+  }
+
+  div.animatedlogo {
+    animation: logo 1.5s ease;
+  }
+
+  @keyframes logo {
+    0% {
+      opacity: 0;
+      transform: translateY(-100px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+  @keyframes sm {
+    0% {
+      opacity: 0;
+      transform: translateX(0px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
   }
 }
 input[type=text] {

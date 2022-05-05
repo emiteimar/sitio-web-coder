@@ -1,0 +1,97 @@
+@media (max-width: map-get($screen-width, medium)) {
+  .nav__list {
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+  .grid__container__contact {
+    grid-template-areas:
+      "contacttext"
+      "contactform";
+  }
+  input[type="text"] {
+    width: 100%;
+  }
+  input[type="email"] {
+    width: 100%;
+  }
+}
+
+@media (max-width: map-get($screen-width, small)) {
+  .grid__container {
+    display: grid;
+    grid-gap: 1rem;
+    margin: 1rem;
+    max-width: 1300px;
+    justify-items: center;
+    grid-template-areas:
+      "article1"
+      "article2"
+      "banner";
+  }
+  .grid__container__prod {
+    display: grid;
+    grid-gap: 1rem;
+    margin: 1rem;
+    max-width: 1300px;
+    justify-items: center;
+    justify-self: center;
+    grid-template-areas:
+      "prod1img"
+      "prod1desc"
+      "prod2img"
+      "prod2desc"
+      "prod3img"
+      "prod3desc";
+  }
+  .grid__area__banner {
+    max-width: 1200px;
+  }
+  .banner__img {
+    max-width: 100%;
+  }
+  .header__container {
+    flex-direction: column;
+    align-content: space-between;
+  }
+
+  @import "hamburger";
+
+  .nav__list {
+    flex-direction: column;
+    padding-bottom: 1rem;
+  }
+  header {
+    position: relative;
+  }
+  .wpicon {
+    display: flex;
+    position: fixed;
+    z-index: 2;
+    margin-left: 80vw;
+    margin-top: 80vh;
+  }
+  div.animatedlogo {
+    animation: logo 1.5s ease;
+  }
+  @keyframes logo {
+    0% {
+      opacity: 0;
+      transform: translateY(-100px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+
+  @keyframes sm {
+    0% {
+      opacity: 0;
+      transform: translateX(0px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+}
