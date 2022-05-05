@@ -107,55 +107,34 @@ footer {
   grid-template-areas: "banner article1" "banner article2";
 }
 
-.grid__area__banner {
-  grid-area: banner;
+.grid__area, .grid__area__article2, .grid__area__article1, .grid__area__banner {
   display: grid;
   justify-items: center;
   align-content: start;
   background-image: linear-gradient(beige, white, #decdaa);
   border: solid 1px #2f2428;
-  max-width: 250px;
   padding: 2rem;
   box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.4);
   transition: all 0.5s;
 }
-.grid__area__banner:hover {
+.grid__area:hover, .grid__area__article2:hover, .grid__area__article1:hover, .grid__area__banner:hover {
   transform: scale(105%);
   transition-duration: 0.3s;
+}
+
+.grid__area__banner {
+  grid-area: banner;
+  max-width: 250px;
 }
 
 .grid__area__article1 {
   grid-area: article1;
-  display: grid;
-  justify-items: center;
   max-width: 1200px;
-  background-image: linear-gradient(beige, white, #decdaa);
-  border: solid 1px #2f2428;
-  padding: 2rem;
-  box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.4);
-  transition: all 0.5s;
-}
-.grid__area__article1:hover {
-  transform: scale(105%);
-  transition-duration: 0.3s;
 }
 
 .grid__area__article2 {
   grid-area: article2;
-  display: grid;
-  justify-items: center;
   max-width: 1200px;
-  background-image: linear-gradient(beige, white, #decdaa);
-  border: solid 1px #2f2428;
-  padding: 2rem;
-  box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.4);
-  padding: 2rem;
-  box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.4);
-  transition: all 0.5s;
-}
-.grid__area__article2:hover {
-  transform: scale(105%);
-  transition-duration: 0.3s;
 }
 
 /*GIRD PRODUCTS PAGE*/

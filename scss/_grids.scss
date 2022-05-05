@@ -12,14 +12,12 @@
     "banner article2";
 }
 
-.grid__area__banner {
-  grid-area: banner;
+.grid__area {
   display: grid;
   justify-items: center;
   align-content: start;
   background-image: linear-gradient(beige, white, #decdaa);
   border: $line-border;
-  max-width: 250px;
   padding: 2rem;
   box-shadow: $box-shadow-card;
   transition: all 0.5s;
@@ -27,40 +25,24 @@
     transform: scale(105%);
     transition-duration: 0.3s;
   }
+}
+
+.grid__area__banner {
+  @extend .grid__area;
+  grid-area: banner;
+  max-width: 250px;
 }
 
 .grid__area__article1 {
+  @extend .grid__area;
   grid-area: article1;
-  display: grid;
-  justify-items: center;
   max-width: 1200px;
-  background-image: linear-gradient(beige, white, #decdaa);
-  border: $line-border;
-  padding: 2rem;
-  box-shadow: $box-shadow-card;
-  transition: all 0.5s;
-  &:hover {
-    transform: scale(105%);
-    transition-duration: 0.3s;
-  }
 }
 
 .grid__area__article2 {
+  @extend .grid__area;
   grid-area: article2;
-  display: grid;
-  justify-items: center;
   max-width: 1200px;
-  background-image: linear-gradient(beige, white, #decdaa);
-  border: $line-border;
-  padding: 2rem;
-  box-shadow: $box-shadow-card;
-  padding: 2rem;
-  box-shadow: $box-shadow-card;
-  transition: all 0.5s;
-  &:hover {
-    transform: scale(105%);
-    transition-duration: 0.3s;
-  }
 }
 
 /*GIRD PRODUCTS PAGE*/
