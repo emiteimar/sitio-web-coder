@@ -28,20 +28,8 @@ header {
   justify-content: center;
 }
 
-footer {
-  display: flex;
-  justify-content: center;
-  background: #2d2619;
-  margin-bottom: 0;
-  margin-top: 0;
-  bottom: 0;
-  width: 100%;
-  max-width: 100%;
-  padding: 0.5rem;
-  box-shadow: 0 -10px 10px 0 rgba(0, 0, 0, 0.4);
-  color: white;
-  text-align: center;
-}
+@import "footer";
+
 .header__container {
   display: flex;
   justify-content: space-between;
@@ -61,10 +49,6 @@ footer {
   width: 80%;
   margin: 0px;
   max-width: 1300px;
-}
-
-.nav-toggle {
-  visibility: hidden;
 }
 
 @import "grids";
@@ -101,7 +85,7 @@ footer {
   justify-content: center;
   align-items: center;
   max-width: 1200px;
-  background-image: linear-gradient(beige, white, #decdaa);
+  background-image: $gradient-background;
   border: $line-border;
   margin: 2rem;
   padding: 2rem;
@@ -167,56 +151,4 @@ footer {
 }
 
 @import "mediaqueries";
-
-input[type="text"] {
-  font-family: "Source Sans 3", sans-serif;
-  padding: 20px;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-
-  outline: none;
-  box-sizing: border-box;
-}
-input[type="email"] {
-  font-family: "Source Sans 3", sans-serif;
-  padding: 20px;
-  margin-top: 0.5rem;
-
-  margin-bottom: 0.5rem;
-
-  box-sizing: border-box;
-}
-textarea {
-  font-family: "Source Sans 3", sans-serif;
-  width: 100%;
-  padding: 20px;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  border-radius: 5px;
-  resize: none;
-  box-sizing: border-box;
-}
-input[type="button"],
-input[type="submit"],
-input[type="reset"] {
-  background-color: #2d2619;
-  border: none;
-  border-radius: 5px;
-  padding: 20px;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  color: azure;
-  width: 100%;
-  box-sizing: border-box;
-  transition: all 0.5s;
-  &:hover {
-    transform: scale(105%);
-    transition-duration: 0.3s;
-  }
-}
-
-fieldset {
-  width: 100%;
-  border: none;
-  box-sizing: border-box;
-}
+@import "form";

@@ -92,10 +92,6 @@ footer {
   max-width: 1300px;
 }
 
-.nav-toggle {
-  visibility: hidden;
-}
-
 /*GRIDS Code Start*/
 /*GRIDS INDEX*/
 .grid__container {
@@ -508,6 +504,10 @@ div.animatedsm {
   }
 
   /* Hamburger code Start */
+  .nav-toggle {
+    visibility: hidden;
+  }
+
   .nav {
     width: 100%;
     visibility: hidden;

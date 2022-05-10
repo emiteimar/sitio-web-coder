@@ -1,0 +1,52 @@
+input[type="text"] {
+  font-family: "Source Sans 3", sans-serif;
+  padding: 20px;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+
+  outline: none;
+  box-sizing: border-box;
+}
+input[type="email"] {
+  font-family: "Source Sans 3", sans-serif;
+  padding: 20px;
+  margin-top: 0.5rem;
+
+  margin-bottom: 0.5rem;
+
+  box-sizing: border-box;
+}
+textarea {
+  font-family: "Source Sans 3", sans-serif;
+  width: 100%;
+  padding: 20px;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+  resize: none;
+  box-sizing: border-box;
+}
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  background-color: $dark-background;
+  border: none;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: azure;
+  width: 100%;
+  box-sizing: border-box;
+  transition: all 0.5s;
+  &:hover {
+    transform: scale(105%);
+    transition-duration: 0.3s;
+  }
+}
+
+fieldset {
+  width: 100%;
+  border: none;
+  box-sizing: border-box;
+}
