@@ -452,6 +452,12 @@ div.animatedsm {
   box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.4);
 }
 
+.text__margin__aboutus {
+  padding-top: 2rem;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
 @media (max-width: 1085px) {
   .nav__list {
     margin-left: 0rem;
@@ -504,10 +510,6 @@ div.animatedsm {
   }
 
   /* Hamburger code Start */
-  .nav-toggle {
-    visibility: hidden;
-  }
-
   .nav {
     width: 100%;
     visibility: hidden;

@@ -150,5 +150,11 @@ header {
   box-shadow: $box-shadow-header;
 }
 
+.text__margin__aboutus {
+  padding-top: 2rem;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
 @import "mediaqueries";
 @import "form";
