@@ -150,10 +150,14 @@ header {
   box-shadow: $box-shadow-header;
 }
 
-.text__margin__aboutus {
+.text__margin__20 {
   padding-top: 2rem;
   padding-left: 20%;
   padding-right: 20%;
+}
+
+.product__title {
+  font-weight: bold;
 }
 
 @import "mediaqueries";
